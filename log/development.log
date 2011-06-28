@@ -1,0 +1,116 @@
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (78.1ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (156.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePlayers (20110627052735)
+  [1m[35mSQL (140.6ms)[0m  CREATE TABLE `players` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (31.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110627052735')[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (15.6ms)[0m  [1mdescribe `players`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `players`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (78.1ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (125.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (15.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePlayers (20110627052735)
+  [1m[35mSQL (62.5ms)[0m  CREATE TABLE `players` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (31.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110627052735')[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (15.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (15.6ms)[0m  [1mdescribe `players`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `players`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (62.5ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (125.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (15.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePlayers (20110627052735)
+  [1m[35mSQL (46.9ms)[0m  CREATE TABLE `players` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (31.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110627052735')[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mdescribe `players`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `players`
+
+
+Started GET "/estate/index" for 127.0.0.1 at 2011-06-27 11:09:07 +0530
+
+ActionController::RoutingError (No route matches "/estate/index"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-06-27 11:35:25 +0530
+
+ActionController::RoutingError (No route matches "/users/new"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-27 16:11:37 +0530
+
+Mysql::Error (Unknown database 'newp_dev'):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (46.9ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (93.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-27 16:12:51 +0530
+  Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Mysql::Error: Table 'newp_dev.players' doesn't exist: SELECT `players`.* FROM `players`
+Completed   in 406ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'newp_dev.players' doesn't exist: SELECT `players`.* FROM `players`):
+  app/controllers/players_controller.rb:5:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.2ms)
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (78.1ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (15.6ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (140.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (31.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePlayers (20110627052735)
+  [1m[35mSQL (46.9ms)[0m  CREATE TABLE `players` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `age` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110627052735')[0m
+Migrating to Cit (20110627064350)
+  [1m[35mSQL (31.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110627064350')
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  describe `players`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `players`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-27 16:12:55 +0530
+  Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.0ms)[0m  SELECT `players`.* FROM `players`
+Rendered players/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-06-27 17:36:03 +0530
+  Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.0ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Rendered players/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 15.6ms | ActiveRecord: 0.0ms)
